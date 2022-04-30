@@ -1,0 +1,26 @@
+# Explore data roles and services
+
+## Job roles in world of data
+
+Three key jobs:
+- **Database administrators**: manage databases, permissions to users, storing backup copies of data, restore data in the event of failure
+- **Data engineers**: manage infrastructure and processes for data integration across the organization, apply data cleaning routines, identifying data goverment rules and implementing pipelines to transfer and transform data between system
+- **Data analysts**: explore and analyze data to create visualizations and charts that enable organization to make informed decision
+
+Database administrator:
+- Responsible for design, implementation, maintenance and operational aspect of on-premises and cloud-based database systems
+- Responsible for overall availability and consistent performance and optimization of databases
+- Implement policies, tools, processes for backup and recovery in case of disaster (natural or human-made)
+- Manage security of the data, grant privileges to data users
+
+Data engineer:
+- Collaborate with stakeholders to design and implement data-related workloads (ingestion pipelines, cleasing, transformation) and data stores for analytical workloads.
+- Use wide range of data technologies include relational and non-relational databases, file stores, data streams.
+- Responsible for ensuring data privacy within the cloud and spanning from in-premises to cloud data stores.
+- Own the management and monitoring of data pipelines to ensure performace
+
+Data analyst:
+- Maximize the value of data assets by exploring data, identify trends and relationships
+- Design and build analytical models
+- Enable advanced analytics capabilities through reports and visualization
+- Process raw data into relevant insights based on business requirement
