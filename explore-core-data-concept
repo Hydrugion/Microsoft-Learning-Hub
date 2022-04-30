@@ -1,0 +1,8 @@
+# Explore core data concepts
+
+## Identify data format
+
+3 types of data:
+- Structured: fixed schema ex: Table
+- Semi-structures: have some structure but can vary between entities ex: JSON, XML
+- Unstructured: ex: Document, Audio, Image, Binary
