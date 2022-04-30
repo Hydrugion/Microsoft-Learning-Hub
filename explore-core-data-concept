@@ -75,3 +75,10 @@ Type of user across the stages of architecture:
 - Data analysts: query tables directly in data warehouse to produce reports and visualizaions
 - Business users consume pre-aggregated data in analytical model in the form of reports or dashboards
 
+## Summary
+
+- Identify common data formats
+- Describe options for storing data in files
+- Describe options for storing data in databases
+- Describe characteristics of transactional data processing solutions
+- Describe characteristic of analytical data processing solutions
