@@ -41,4 +41,37 @@ Non-relational databases:
 - Column famlily databases: Store tabular data. Columns can be divided into groups knows as column-family.
 - Graph databases: store entities as nodes and links to model the relationship between them.
 
+## Transactional data processing
+
+- Records *transactions* that model an event which need to be tracked. Think transaction as a small, discrete, unit of work.
+- Work performed by transactional systems often referred to as Online Transactional Processing (OLTP)
+
+OLTP:
+- Rely on database system which datastore is optimized for both read and write to support CURD workload (create, update, retrieve, delete)
+- Operation have to be applied transactionally to ensure data integrity.
+- Enfore transactions that support ACID schematics:
+  - Atomicity
+  - Consistency
+  - Isolation
+  - Durability
+  
+## Analytical data processing
+
+- Typically use read-only (or read-mostly) systems that store vast volumns of historical data or business metrics.
+- Common architecture for enterprise-scale analytics:
+ - Data files stored in a central data lake
+ - ETL process copies data from files and OLTP databases into data warehouse that optimized for read. Data warehouse schema is based on *fact* tables that contains numeric values you want to analyze and related *dimension* table that represent the entities you want to measure.
+ - Data in warehouse can be aggregated and loaded into an online analytical processing (OLAP) model or *cube*. Numeric values (measures) from fact tables are calculated for intersection of dimension tables.
+ - Data in data lake, warehouse and analytical model can be queried to produce reports, visualization and dashboards.
+ 
+*Data lakes* are where large volumn of file-based data are collected and analyzed.
+
+*Data warehouse* are established ways to store data in relational schema that optimized for read-operation.
+
+*OLAP model* is an aggregated type of data storage that optimized for analytical workload. Data aggregations are across dimensions at different levels, enable *drill up/down* to view aggregation at multiple hierarchial levels.
+
+Type of user across the stages of architecture:
+- Data scientists: work directly with data files in datalake to explore and model data
+- Data analysts: query tables directly in data warehouse to produce reports and visualizaions
+- Business users consume pre-aggregated data in analytical model in the form of reports or dashboards
 
